@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!--
+	~Spirit Startpage~
+ 
+      Created by Smallpry
+      
+      If there's any stupid descisions made here please let me know, this is my first startpage (or public foray into web design for that matter).
+      Enjoy!        
+-->
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="style.css">
+		</head>
+	<body>
+		<!-- Put whatever text you want to show up at the top of the page here. I'll comment it out by default. Just remove the tags at the side of the string and it will work. -->
+		<!--<div id="title"><strong>~Spirit Startpage~</strong></div>-->
+			<div id="card">
+				<body onload="document.getElementById(test).style.opacity='0.95'">
+				<div id="content">
+					<table>
+						<tbody>
+							<tr>
+								<!-- Link sections go between <h1> tags, links go after href= and link labels go between > and </a> -->
+								<td><h1>General</h1></td>
+									<td><a href="https://boards.4chan.org/wg/" target="_blank">Link 1</a></td>
+									<td><a href="https://boards.4chan.org/wg/" target="_blank">Link 2</a></td>
+									<td><a href="https://boards.4chan.org/wg/" target="_blank">Link 3</a></td>
+									<td><a href="https://boards.4chan.org/wg/" target="_blank">Link 4</a></td>
+									<td><a href="https://boards.4chan.org/wg/" target="_blank">Link 5</a></td>
+								</tr>
+								<tr>
+									<td><h1>Imageboards</h1></td>
+									<td><a href="https://boards.4chan.org/wg/" target="_blank">Link 1</a></td>
+									<td><a href="https://boards.4chan.org/wg/" target="_blank">Link 2</a></td>
+									<td><a href="https://boards.4chan.org/wg/" target="_blank">Link 3</a></td>
+									<td><a href="https://boards.4chan.org/wg/" target="_blank">Link 4</a></td>
+									<td><a href="https://boards.4chan.org/wg/" target="_blank">Link 5</a></td>
+								</tr>
+								<tr>
+									<td><h1>Other</h1></td>
+									<td><a href="https://boards.4chan.org/wg/" target="_blank">Link 1</a></td>
+									<td><a href="https://boards.4chan.org/wg/" target="_blank">Link 2</a></td>
+									<td><a href="https://boards.4chan.org/wg/" target="_blank">Link 3</a></td>
+									<td><a href="https://boards.4chan.org/wg/" target="_blank">Link 4</a></td>
+									<td><a href="https://boards.4chan.org/wg/" target="_blank">Link 5</a></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</body>
+			<!-- Clock script I stole from ricocheting.com -->
+				<div id="clock">
+					<script type="text/javascript">
+						tday=new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday");
+						tmonth=new Array("January","February","March","April","May","June","July","August","September","October","November","December");
+
+						function GetClock(){
+						var d=new Date();
+						var nday=d.getDay(),nmonth=d.getMonth(),ndate=d.getDate(),nyear=d.getFullYear();
+						var nhour=d.getHours(),nmin=d.getMinutes(),nsec=d.getSeconds(),ap;
+
+						if(nhour==0){ap=" AM";nhour=12;}
+						else if(nhour<12){ap=" AM";}
+						else if(nhour==12){ap=" PM";}
+						else if(nhour>12){ap=" PM";nhour-=12;}
+
+						if(nmin<=9) nmin="0"+nmin;
+						if(nsec<=9) nsec="0"+nsec;
+
+						document.getElementById('clockbox').innerHTML=""+tday[nday]+" "+tmonth[nmonth]+" "+ndate+" "+nyear+" "+nhour+":"+nmin+"";
+						}
+
+						window.onload=function(){
+						GetClock();
+						setInterval(GetClock,1000);
+						}
+					</script>
+				<div id="clockbox"></div>
+			</div>
+		</body>
+	</html>
