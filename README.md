@@ -1,12 +1,12 @@
 
 # Spirit Startpage
-<img src="Spirit Startpage Header.png"" width="100%">
+<img src="Spirit Startpage Header.png" width="100%">
 
-#Notes
+# Notes
 
 This is my first startpage. If there any any errors/ stupid mistakes / whatever please bring them to my attention. I am not perfect, especially as a beginner.
 
-#Usage
+# Usage
 <ol>
 <li> Install this <a href="https://www.fontsquirrel.com/fonts/roboto">Fontpack (Roboto)</a>.</li>
 <li> Now if you haven't already, create a new github account and fork this repository (yes, this one).</li>
